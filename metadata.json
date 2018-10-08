@@ -1,0 +1,40 @@
+{
+  "name": "jonasdemoor-pdagent",
+  "version": "0.1.0",
+  "author": "Jonas De Moor",
+  "summary": "Puppet module for installing and configuring the PagerDuty Agent",
+  "license": "GPL-3.0-or-later",
+  "source": "https://github.com/jonasdemoor/puppet-pdagent",
+  "dependencies": [
+    
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "CentOS",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "9"
+      ]
+    }
+  ],
+  "requirements": [
+    {
+      "name": "puppet",
+      "version_requirement": ">= 4.7.0 < 6.0.0"
+    }
+  ],
+  "pdk-version": "1.7.0",
+  "template-url": "file:///opt/puppetlabs/pdk/share/cache/pdk-templates.git",
+  "template-ref": "1.7.0-0-g57412ed"
+}
