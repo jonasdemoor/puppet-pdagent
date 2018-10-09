@@ -16,15 +16,8 @@ class pdagent(
   Boolean $service_enabled   = true,
 ) {
 
-  stage { 'first':
-    before => Stage['main']
-  }
-
-  class { 'pdagent::repos':
-    stage => first,
-  }
-
-  include pdagent::install
-  include pdagent::service
+  class { 'pdagent::repos': }
+  -> class { 'pdagent::install': }
+  -> class { 'pdagent::service': }
 
 }
